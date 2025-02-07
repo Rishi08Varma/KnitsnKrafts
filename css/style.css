@@ -1,0 +1,70 @@
+/* Main Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #f8f9fa;
+    padding: 4rem 0;
+}
+
+.hero-section h1 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    margin-top: auto;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #007bff;
+}
+
+/* Admin Dashboard */
+.admin-sidebar {
+    min-height: calc(100vh - 56px);
+    background-color: #f8f9fa;
+}
+
+/* Authentication Forms */
+.auth-form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Custom Button Styles */
+.btn-custom {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.btn-custom:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}

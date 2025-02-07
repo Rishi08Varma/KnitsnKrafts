@@ -1,0 +1,145 @@
+/* Custom Colors */
+:root {
+    --primary-color: #7b4b94;
+    --secondary-color: #9f86c0;
+    --accent-color: #e6b2c6;
+    --light-color: #f9f7f9;
+    --dark-color: #392f5a;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+/* Product Card Customization */
+.product-card {
+    border: none;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.product-card .card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.product-price {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* Cart Badge */
+.cart-count {
+    position: relative;
+    top: -8px;
+    right: 5px;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+}
+
+/* Custom Form Styles */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(159, 134, 192, 0.25);
+}
+
+/* Hero Section Customization */
+.hero-section {
+    background: linear-gradient(to right, var(--light-color), var(--accent-color));
+    padding: 4rem 0;
+}
+
+/* Footer Customization */
+footer {
+    background-color: var(--dark-color);
+    color: var(--light-color);
+}
+
+footer a {
+    color: var(--accent-color);
+}
+
+footer a:hover {
+    color: var(--secondary-color);
+}
+
+/* Quick View Modal */
+.modal-content {
+    border-radius: 15px;
+}
+
+.modal-header {
+    background-color: var(--light-color);
+    border-radius: 15px 15px 0 0;
+}
+
+/* Cart Page Styles */
+.cart-item {
+    border-bottom: 1px solid #eee;
+    padding: 1rem 0;
+}
+
+.cart-item:last-child {
+    border-bottom: none;
+}
+
+.cart-item-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.quantity-control {
+    width: 120px;
+}
+
+/* Filter Sidebar */
+.filter-section {
+    background-color: var(--light-color);
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .product-card .card-img-top {
+        height: 200px;
+    }
+    
+    .cart-item-image {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .quantity-control {
+        width: 100px;
+    }
+}
+
+/* Loading Animation */
+.loading-spinner {
+    width: 3rem;
+    height: 3rem;
+    border: 5px solid var(--light-color);
+    border-top: 5px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
